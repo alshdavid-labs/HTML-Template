@@ -10,10 +10,10 @@ var privateDir = projectDir + 'private'
 var publicDir = projectDir + 'public'
 
 var privateStyle = privateDir + '/styles'
-var privateJS = privateDir + '/js'
+var privateJS = privateDir + '/scripts'
 
 var publicStyle = publicDir + '/styles'
-var publicJS = publicDir + '/js'
+var publicJS = publicDir + '/scripts'
 
 /****************************************
     1. Define Grunt Tasks
@@ -57,9 +57,9 @@ module.exports = function (grunt) {
         javascript: {
             files: [{
                 expand: true,
-                cwd: 'private/js',
+                cwd: privateJS,
                 src: ['**/*.js'],
-                dest: 'public/js'
+                dest: publicJS
             }]
         }
         
@@ -93,7 +93,7 @@ module.exports = function (grunt) {
         main: {
             expand: true,
             cwd: privateDir,
-            src: ['**', '!**/js/**', '!**/styles/**'],
+            src: ['**', '!**/scripts/**', '!**/styles/**'],
             dest: publicDir + '/',
         },
     },  

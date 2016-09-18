@@ -13,11 +13,27 @@ Installation/Running Instructions:
 
 2) Type "npm install"
 
+=========
+
+Only run 3, 4 and 5 once per computer, 
+they are just globally installed services 
+that only need to be installed once.
+
+If you run them again they will just update 
+you to the latest version if there is one.
+No harm.
+
+If you have already installed them, skip to 6
+
 3) Type "npm install -g grunt
 
 4) Type "npm install -g grunt-cli"
 
-5) To start the service, type "grunt" in the console while in that folder
+5) Type "npm install -g typescript"
+
+=========
+
+6) To start the service, type "grunt" in the console while in that folder
 
 
 -------------------
@@ -29,7 +45,6 @@ Warning:
 --------
 
 Do not modify the files in the 'public/' direcotry, they are auto generated and often overwritten.
-
 All of the working files are located in the 'private/' directory.
 
 --------

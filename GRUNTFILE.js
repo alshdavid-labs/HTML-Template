@@ -1,10 +1,15 @@
+/*
+    Terminal Usage:
+    
+    'grunt' - minifies and compiles TypeScript and JavaScript and launches browserSync
+    'grunt watch' - minifies and compiles TypeScript and JavaScript
+    'grunt ts' - compiles TypeScript only
+    'grunt js' - minifies JavaSCript only
 
+*/
 /****************************************
     0. Grunt Variables
 ****************************************/
-
-
-
 var projectDir = '';
 var privateDir = projectDir + 'private'
 var publicDir = projectDir + 'public'
@@ -39,6 +44,10 @@ module.exports = function (grunt) {
             files: privateJS + "/**/*.js",
             tasks: ['uglify']
         },
+        watch_typescript: {
+            files: privateJS + "/**/*.ts",
+            tasks: ['ts']
+        },
        watch_home: {
           files: privateDir + '/*.*',
           tasks: ['copy']
@@ -63,7 +72,15 @@ module.exports = function (grunt) {
             }]
         }
         
-    },				
+    },	
+
+    ts: {
+      default : {
+        //cwd: privateJS,
+        src: ["**/*.ts", "!node_modules/**"],
+        dest: publicJS
+      }
+    },			
 	
 /****************************************
     4. Convert SCSS to CSS
@@ -132,6 +149,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks("grunt-ts");
     require('load-grunt-tasks')(grunt);
 
 /****************************************

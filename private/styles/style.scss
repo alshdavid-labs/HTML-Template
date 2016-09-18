@@ -1,0 +1,18 @@
+// Imports
+@import "mappy";
+
+// Variables  
+$res-bp: 1050px;
+$color-1: black;
+$color-2: white;
+
+// Mixin Example
+@include mappy-bp(max-width $res-bp){}
+
+// Normalise CSS
+body, h1, h2, h3, h4, h5, h6, p, a, section, div, ul, li {
+    margin: 0;
+    padding: 0;
+} 
+
+// Your SCSS goes below here

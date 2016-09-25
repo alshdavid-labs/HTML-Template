@@ -37,8 +37,8 @@ module.exports = function (grunt) {
             spawn: false
         },
         watch_sass: {
-            files: privateStyle + "/**/*.scss",
-            tasks: ['sass']
+            files: [privateStyle + "/**/*.scss", publicStyle + "/style.css"],
+            tasks: ['sass', 'autoprefixer']
         },
         watch_javascript: {
             files: privateJS + "/**/*.js",
@@ -52,6 +52,10 @@ module.exports = function (grunt) {
           files: privateDir + '/*.*',
           tasks: ['copy']
        },
+       watch_prefix: {
+          files: publicStyle + "/style.css",
+          tasks: ['autoprefixer']
+       }
     },
 
 /****************************************
@@ -101,6 +105,16 @@ module.exports = function (grunt) {
             },],
           }
         },
+
+        autoprefixer: {
+            options: {
+                browsers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+            },
+            dist: {
+                src: publicStyle + '/style.css',
+                dest: publicStyle + '/style.css'
+            }
+        },
     
  /****************************************
     5. Copy site content to public folder
@@ -127,6 +141,15 @@ module.exports = function (grunt) {
         options: {
             server: {
                 baseDir: [publicDir]            
+            },
+            notify:{
+                styles: {
+                    top: 'auto',
+                    bottom: '0',
+                    height: 'auto',
+                    opacity: '0.2',
+                    "border-radius" : "0px"
+                }
             }
         }
     },  
@@ -149,6 +172,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks("grunt-ts");
     require('load-grunt-tasks')(grunt);
 

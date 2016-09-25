@@ -1,18 +1,23 @@
-// Imports
+// Mixin Imports
 @import "mappy";
 
 // Variables  
-$res-bp: 1050px;
-$color-1: black;
+$page-width: 1050px;
+$tablet-width: 600px;
+
+$color-1: #3498db;
 $color-2: white;
 
-// Mixin Example
-@include mappy-bp(max-width $res-bp){}
+$triangle: '../images/triangle.svg';
+$triangle-brand: '../images/triangle-brand.svg';
 
-// Normalise CSS
-body, h1, h2, h3, h4, h5, h6, p, a, section, div, ul, li {
-    margin: 0;
-    padding: 0;
-} 
+// Core Import
+@import "typography";
+@import "animations";
+
+// View Imports
+@import "home";
+@import "header";
 
 // Your SCSS goes below here
+

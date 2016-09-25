@@ -4,21 +4,113 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>site-name</title>
-    <!-- 
+        
+        <title>Synapse New Zealand</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-    -->
+    
     </head>
     <body>
+    <header id="page-header" class="top">
+        <h1 class="header-page-width"><a href="#page-top">Synapse</a><span>{ }</span></h1>
+        <nav class="desktop header-page-width">
+            <a href="#portfolio-section">About Us</a>
+            <a href="#websites-section">Websites</a>
+            <a href="#apps-section">Mobile Apps</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+        <button onclick="toggleMenu()"><i class="material-icons menu page-width mobile">menu</i></button>
+    </header>
 
+    <header id="floating-page-header" class="top desktop">
+        <h1 class="header-page-width"><a href="#page-top">Synapse</a><span>{ }</span></h1>
+        <nav class="header-page-width">
+            <a href="#portfolio-section">About Us</a>
+            <a href="#websites-section">Websites</a>
+            <a href="#apps-section">Mobile Apps</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
 
+    <div onclick="toggleMenu()" id="slide-menu-mask" class="mobile"></div>
+    <section id="slide-menu" class="mobile">
+        <ul>
+            <h1><a onclick="toggleMenu()" href="#page-top">Synapse<span>{ }</span></a></h1>
+            <a onclick="toggleMenu()" href="#portfolio-section">About Us</a>
+            <a onclick="toggleMenu()" href="#websites-section">Websites</a>
+            <a onclick="toggleMenu()" href="#apps-section">Mobile Apps</a>
+            <a onclick="toggleMenu()" href="#contact-section">Contact</a>
+        </ul>
+    </section>
 
+    <section id="page-top" class="page-home"> 
+
+        <section id="main-banner" class="banner">
+            <div class="banner-text page-width">
+                <h1>Your App</h1>
+                <h1 class="two">Your Website</h1> 
+                <h1 class="three">Our Passion</h1>
+            </div> 
+            <div class="phone"></div>
+        </section>
+
+        <section id="portfolio-section" class="page-content ">
+            <div class="content-wrapper page-width">
+                <h1>About Us</h1>
+                <h2>We develop high performance, highly designed apps and websites using the latest technolgies. <br><br>
+                    Our team has years of experience, coupled with our partnership with Microsoft and Google, 
+                    your idea will be future proof, secure and able to handle the demands of your users.
+                </h2>
+                <div class="image" id="igonre-app-image" style="background-image: url(/../images/app.svg);"></div>           
+
+            </div>
+        </section>
+
+        <section id="websites-section" class="page-content"> 
+            <div class="content-wrapper page-width">
+                <h1>Websites</h1>
+                <h2>Our team work with you to ensure that your idea is brought to life in the exact way you envisioned</h2>
+                <div class="image" style="background-image: url(/../images/browser.svg);"></div>           
+
+            </div>
+        </section>
+
+        <section id="apps-section" class="page-content">
+            <div class="content-wrapper page-width">
+                <h1>Apps</h1>
+                <h2>Using leading edge technologies, your app will be availalbe accross mobile platforms, high performance, up to date and highly secure</h2>
+                <div class="image" style="background-image: url(/../images/secure.svg);"></div>           
+
+            </div>
+        </section>
+
+        <section id="contact-section" class="page-content">
+            <div class="content-wrapper page-width">
+                <h1>Contact Us</h1>
+                <h2> 
+                    Synapse Software
+                    <br>
+                    Auckland, New Zealand 
+                    <br><br><br><br>
+                </h2>
+                    <h3>Contact David</h3> 
+                
+                    <br><br>
+                    <address><h1><u><a href="tel:0284041700">028 404 1700</a></u></h1></address>
+                    <br>
+                    <address><h3><u><a href="mailto:alshdavid@gmail.com">alshdavid@gmail.com</a></u></h3></address>
+               
+            </div>
+        </section>
+
+    </section>
     <!-- JQuerry
         <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     -->
-    <!-- js and ts imports - rename as needed
-        <script src="scripts/_main.js"></script>
+        <script src="scripts/mainjs.js"></script>
         <script src="scripts/main.js"></script>
-    -->
+    
     </body>
 </html>

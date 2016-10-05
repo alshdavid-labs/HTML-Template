@@ -21,7 +21,8 @@ grunt
 ```
 
 ----------------------------
-Grunt Installation:
+##Grunt Installation:
+
 If you do not have grunt globally installed:
 
 ```

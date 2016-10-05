@@ -4,32 +4,25 @@ HTML-Template
 
 This is a basic template that has some basic task runner settings to automatically transpiles SCSS/SASS, uglifies JS and live reloads any changes you make to your files, in your browswer.
 
-
 ----------------------------------
 Installation/Running Instructions:
 ----------------------------------
 
-1) Open the root directory in your console of choice
-2) Type "npm install"
+Open the root directory in your console of choice and run the following commands
+1) "npm install"
 
 =========
+If you have already have grunt globally installed then skip to 4
 
-Only run 3, and 4 once per computer, 
-they are globally installed packages 
-that only need to be installed once.
-
-If you run them again they will just update 
-you to the latest version if there is one.
+Only run 2, and 3 once per computer, they are globally installed packages that only need to be installed once.
+If you run them again they will just update you to the latest version if there is one. 
 No harm.
 
-If you have already installed them, skip to 5
-
-3) Type "npm install -g grunt
-4) Type "npm install -g grunt-cli"
-
+2) "npm install -g grunt
+3) "npm install -g grunt-cli"
 =========
 
-5) To start the service, type "grunt" in the console while in that folder
+4) To start the service, type "grunt" in the console while in that folder
 
 Note: to have access to the SASS/TS error log, you will need to run two console windows, one running "grunt watch" and the other running "grunt browserSync" 
 

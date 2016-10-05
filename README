@@ -1,8 +1,8 @@
-==========       
-WebTemplar
-==========
+=============  
+HTML-Template
+=============
 
-WebTemplar is a basic template that automatically transpiles SCSS/SASS, uglifies JS and live reloads any changes you make to your files, in your browswer.
+This is a basic template that has some basic task runner settings to automatically transpiles SCSS/SASS, uglifies JS and live reloads any changes you make to your files, in your browswer.
 
 
 ----------------------------------
@@ -10,13 +10,12 @@ Installation/Running Instructions:
 ----------------------------------
 
 1) Open the root directory in your console of choice
-
 2) Type "npm install"
 
 =========
 
 Only run 3, 4 and 5 once per computer, 
-they are just globally installed services 
+they are globally installed packages 
 that only need to be installed once.
 
 If you run them again they will just update 
@@ -26,14 +25,14 @@ No harm.
 If you have already installed them, skip to 6
 
 3) Type "npm install -g grunt
-
 4) Type "npm install -g grunt-cli"
-
 5) Type "npm install -g typescript"
 
 =========
 
 6) To start the service, type "grunt" in the console while in that folder
+
+Note: to have access to the SASS/JS/TS error log, you will need to run two console windows, one running "grunt watch" and the other running "grunt browserSync" 
 
 
 -------------------
@@ -67,3 +66,7 @@ Only those folders will have the SCSS and JS minified and transpiled. Folders ex
 Any aditional tasks can be added to this, this just serves as a basic well rounded scaffold for a new project
 
 
+
+==========
+
+ToDo > Setup Babble for ES6 JS compilation

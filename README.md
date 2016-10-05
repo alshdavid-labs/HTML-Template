@@ -36,7 +36,6 @@ npm install -g grunt
 npm install -g grunt-cli
 ```
 ----------------------------
-
 ---------------------
 Running Instructions:
 ---------------------

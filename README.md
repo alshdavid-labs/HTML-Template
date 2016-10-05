@@ -20,6 +20,7 @@ Usage Instructions:
 grunt
 ```
 
+----------------------------
 -----GRUNT INSTALLATION-----
 If you do not have grunt globally installed:
 

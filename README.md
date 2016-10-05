@@ -9,14 +9,22 @@ Installation Instructions:
 --------------------------
 
 Open the root directory in your console of choice and run the following commands
+```
 $ "npm install"
+```
+```
 $ "grunt" - to start the service
+```
 
 -----GRUNT INSTALLATION-----
 If you do not have grunt globally installed:
 
+```
 # "npm install -g grunt
+```
+```
 # "npm install -g grunt-cli"
+```
 ----------------------------
 
 ---------------------

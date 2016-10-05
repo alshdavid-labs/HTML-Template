@@ -31,7 +31,7 @@ If you have already installed them, skip to 5
 
 5) To start the service, type "grunt" in the console while in that folder
 
-Note: to have access to the SASS/JS/TS error log, you will need to run two console windows, one running "grunt watch" and the other running "grunt browserSync" 
+Note: to have access to the SASS/TS error log, you will need to run two console windows, one running "grunt watch" and the other running "grunt browserSync" 
 
 
 -------------------

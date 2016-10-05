@@ -3,8 +3,7 @@
     
     'grunt' - minifies and compiles TypeScript and JavaScript and launches browserSync
     'grunt watch' - minifies and compiles TypeScript and JavaScript
-    'grunt ts' - compiles TypeScript only
-    'grunt js' - minifies JavaSCript only
+    'grunt browserSync' - watches changes to the public directory and syncs it with the browser
 
 */
 /****************************************
@@ -80,7 +79,6 @@ module.exports = function (grunt) {
 
     ts: {
       default : {
-        //cwd: privateJS,
         src: ["**/*.ts", "!node_modules/**"],
         dest: publicJS
       }
@@ -99,7 +97,7 @@ module.exports = function (grunt) {
             files: [{
                 expand: true,
                 cwd: privateStyle,
-                src: ['*.scss'],
+                src: ['style.scss'],
                 dest: publicStyle,
                 ext: '.css'
             },],

@@ -1,4 +1,10 @@
-// Normalise CSS
+// Remove click highlighting 
+*::selection { background-color:transparent; } 
+*::-moz-selection { background-color:transparent; }
+* { -webkit-user-select: none;    -moz-user-select: -moz-none;    -ms-user-select: none;    user-select: none;    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } 
+input[type="text"], textarea, [contenteditable] {    -webkit-user-select: text;    -moz-user-select: text;    -ms-user-select: text;    user-select: text; }
+
+// My Normalise CSS
 body, h1, h2, h3, h4, h5, h6, p, a, section, div, ul, li {
     margin: 0;
     padding: 0;
@@ -12,34 +18,13 @@ body, h1, h2, h3, h4, h5, h6, p, a, section, div, ul, li {
     user-select: none; 
 } 
 
-*::selection 
-{
-    background-color:transparent;
-} 
-*::-moz-selection
-{
-    background-color:transparent;
-}
-*
-{        
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    /*IE10*/
-    -ms-user-select: none;
-    user-select: none;
-
-    /*You just need this if you are only concerned with android and not desktop browsers.*/
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}    
-input[type="text"], textarea, [contenteditable]
-{
-
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+hr {
+    background-color: $color-1;
+    height: 1px;
+    border: none;
 }
 
+// For floats
 .clear-after {
     &:after {
         visibility: hidden;
@@ -51,37 +36,17 @@ input[type="text"], textarea, [contenteditable]
      }
 }
 
-.header-page-width {
-    margin: 0 2% 0 2%;
-    @include mappy-bp(max-width $page-width){
-        margin: 0 6% 0 6%;
-    }
-}
-
-.page-width {
-    margin: 0 10% 0 10%;
-}
-
+// To show and hide elements for desktop / mobile
 .desktop {
     @include mappy-bp(max-width $page-width){
-        display: none;
+        display: none !important;
     }
 }
 
 .mobile {
     @include mappy-bp($page-width){
-        display: none;
+        display: none !important;
     }
 }
 
 
-h1, h2, h3, h4, h5, h6, p, hr, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-hr {
-    background-color: $color-1;
-    height: 1px;
-    border: none;
-}

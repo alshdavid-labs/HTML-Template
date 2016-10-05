@@ -1,5 +1,8 @@
 // Mixin Imports
-@import "mappy";
+@import "lib/mappy";
+//
+// Mappy usage: @include mappy-bp(1000px) { rules : here; }
+
 
 // Variables  
 $page-width: 1050px;
@@ -8,16 +11,12 @@ $tablet-width: 600px;
 $color-1: #3498db;
 $color-2: white;
 
-$triangle: '../images/triangle.svg';
-$triangle-brand: '../images/triangle-brand.svg';
-
 // Core Import
 @import "typography";
-@import "animations";
 
 // View Imports
-@import "home";
-@import "header";
+//@import "home";
+
 
 // Your SCSS goes below here
 

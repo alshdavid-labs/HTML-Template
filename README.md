@@ -8,22 +8,26 @@ This is a basic template that has some basic task runner settings to automatical
 Installation Instructions:
 --------------------------
 
-Open the root directory in your console of choice and run the following commands
+In the root directory run the following commands
 ```
-$ "npm install"
+npm install
 ```
+
+-------------------
+Usage Instructions:
+-------------------
 ```
-$ "grunt" - to start the service
+grunt
 ```
 
 -----GRUNT INSTALLATION-----
 If you do not have grunt globally installed:
 
 ```
-# "npm install -g grunt
+npm install -g grunt
 ```
 ```
-# "npm install -g grunt-cli"
+npm install -g grunt-cli
 ```
 ----------------------------
 

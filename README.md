@@ -43,7 +43,7 @@ Running Instructions:
 Do not modify the files in the *public/* direcotry, they are auto generated and often overwritten.
 All of the working files are located in the *private/* directory.
 
---------
+=============
 
 
 The index.html is the main html file, modify that to make changes to the website.

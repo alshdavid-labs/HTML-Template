@@ -14,7 +14,7 @@ Installation/Running Instructions:
 
 =========
 
-Only run 3, 4 and 5 once per computer, 
+Only run 3, and 4 once per computer, 
 they are globally installed packages 
 that only need to be installed once.
 
@@ -22,15 +22,14 @@ If you run them again they will just update
 you to the latest version if there is one.
 No harm.
 
-If you have already installed them, skip to 6
+If you have already installed them, skip to 5
 
 3) Type "npm install -g grunt
 4) Type "npm install -g grunt-cli"
-5) Type "npm install -g typescript"
 
 =========
 
-6) To start the service, type "grunt" in the console while in that folder
+5) To start the service, type "grunt" in the console while in that folder
 
 Note: to have access to the SASS/JS/TS error log, you will need to run two console windows, one running "grunt watch" and the other running "grunt browserSync" 
 

@@ -8,20 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alshdavid/webTemplar.git"
+    "url": "git+https://github.com/alshdavid/HTML-Template.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alshdavid/webTemplar/issues"
-  },
-  "homepage": "https://github.com/alshdavid/webTemplar#readme",
+  "author": "David Alsh",
+  "license": "MIT",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
-    "grunt-ts": "^6.0.0-beta.3",
-    "node-sass": "^3.10.0",
-    "typescript": "^1.8.10"
+    //"grunt-ts": "^6.0.0-beta.3",
+    "node-sass": "^3.10.0"
+    //"typescript": "^1.8.10"
   },
   "devDependencies": {
     "grunt-browser-sync": "^2.2.0",
@@ -29,7 +25,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-htmlclean": "^2.7.7",
+    //"grunt-htmlclean": "^2.7.7",
     "grunt-sass": "^1.2.1",
     "load-grunt-tasks": "^3.5.0"
   }

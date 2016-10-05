@@ -43,10 +43,10 @@ module.exports = function (grunt) {
             files: privateJS + "/**/*.js",
             tasks: ['uglify']
         },
-        watch_typescript: {
-            files: privateJS + "/**/*.ts",
-            tasks: ['ts']
-        },
+        //watch_typescript: {
+        //    files: privateJS + "/**/*.ts",
+        //    tasks: ['ts']
+        //},
        watch_home: {
           files: privateDir + '/*.*',
           tasks: ['copy']
@@ -77,12 +77,12 @@ module.exports = function (grunt) {
         
     },	
 
-    ts: {
-      default : {
-        src: ["**/*.ts", "!node_modules/**"],
-        dest: publicJS
-      }
-    },			
+    //ts: {
+    //  default : {
+    //    src: ["**/*.ts", "!node_modules/**"],
+    //    dest: publicJS
+    //  }
+    //},			
 	
 /****************************************
     4. Convert SCSS to CSS
@@ -171,7 +171,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks("grunt-ts");
+    //grunt.loadNpmTasks("grunt-ts");
     require('load-grunt-tasks')(grunt);
 
 /****************************************

@@ -8,7 +8,7 @@ This is a basic template that has some basic task runner settings to automatical
 Installation Instructions:
 --------------------------
 
-In the root directory run the following commands
+In the root directory run the following command:
 ```
 npm install
 ```
@@ -16,9 +16,13 @@ npm install
 -------------------
 Usage Instructions:
 -------------------
+
+In the root directory run the following command:
 ```
 grunt
 ```
+
+Only edit the files in *private* folder, they will be automatically built and served from the *public* folder
 
 ----------------------------
 ##Grunt Installation:

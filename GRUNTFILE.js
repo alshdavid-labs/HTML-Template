@@ -43,10 +43,6 @@ module.exports = function (grunt) {
             files: privateJS + "/**/*.js",
             tasks: ['uglify']
         },
-       watch_home: {
-          files: privateDir + '/*.*',
-          tasks: ['copy']
-       },
        watch_prefix: {
           files: publicStyle + "/style.css",
           tasks: ['autoprefixer']

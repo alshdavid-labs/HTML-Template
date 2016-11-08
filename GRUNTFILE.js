@@ -13,11 +13,11 @@ var projectDir = '';
 var privateDir = projectDir + 'private'
 var publicDir = projectDir + 'public'
 
-var privateStyle = privateDir + '/styles'
-var privateJS = privateDir + '/scripts'
+var privateStyle = privateDir + '/css'
+var privateJS = privateDir + '/js'
 
-var publicStyle = publicDir + '/styles'
-var publicJS = publicDir + '/scripts'
+var publicStyle = publicDir + '/css'
+var publicJS = publicDir + '/js'
 
 /****************************************
     1. Define Grunt Tasks
@@ -43,10 +43,6 @@ module.exports = function (grunt) {
             files: privateJS + "/**/*.js",
             tasks: ['uglify']
         },
-        //watch_typescript: {
-        //    files: privateJS + "/**/*.ts",
-        //    tasks: ['ts']
-        //},
        watch_home: {
           files: privateDir + '/*.*',
           tasks: ['copy']

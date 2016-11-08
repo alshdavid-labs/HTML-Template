@@ -1,0 +1,21 @@
+// Mixin Imports
+@import "lib/mappy";
+//
+// Mappy usage: @include mappy-bp(1000px) { rules : here; }
+
+
+// Variables  
+$page-width: 1050px;
+$tablet-width: 600px;
+
+$color-1: #3498db;
+$color-2: white;
+
+// Core Import
+@import "typography";
+
+// View Imports
+//@import "home";
+
+
+// Your SCSS goes below here

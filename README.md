@@ -30,7 +30,7 @@ grunt watch
 grunt browserSync
 ```
 
-Only edit the files in **private** folder, they will be automatically built and served from the **public** folder
+
 
 ----------------------------
 ##Grunt Installation:

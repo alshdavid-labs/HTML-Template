@@ -22,7 +22,7 @@ In the root directory run the following command:
 grunt
 ```
 
-If you want to have an error log or only use the watch command, open two seperate terminals and run:
+OR if you want to have an error log or only use the watch command, open two seperate terminals and run:
 ```
 grunt watch
 ```

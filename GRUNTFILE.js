@@ -102,9 +102,9 @@ module.exports = function (grunt) {
     copy: {
         main: {
             expand: true,
-            cwd: privateDir,
+            cwd: 'private',
             src: ['**', '!**/scripts/**', '!**/styles/**'],
-            dest: publicDir + '/',
+            dest: 'public' + '/',
         },
     },  
 
@@ -115,11 +115,11 @@ module.exports = function (grunt) {
 
     browserSync: {
         bsFiles: {
-            src : [publicDir]
+            src : ['public']
         },
         options: {
             server: {
-                baseDir: [publicDir]            
+                baseDir: ['public']            
             },
             notify:{
                 styles: {

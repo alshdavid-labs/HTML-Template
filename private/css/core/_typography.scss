@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+} 
+
+hr {
+    background-color: $color-1;
+    height: 1px;
+    border: none;
+}
+
+
+// To show and hide elements for desktop / mobile
+.desktop {
+    @media (max-width: $desktop){
+        display: none !important;
+    }
+}
+
+.mobile {
+    @media (min-width: $desktop){
+        display: none !important;
+    }
+}
+
+

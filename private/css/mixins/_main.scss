@@ -5,17 +5,17 @@
     text-overflow: ellipsis;
 }
 
-@mixin bg($setting, $background){
+@mixin bg($setting, $background: ""){
     @if $setting == cover {
         background-position: center;
         background-size: cover;
-    } @else {
-        background-position: contain;
+    } @else if $setting == contain {
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    @if $background {
+    @if $background != ""{
         background-image: url( $background );
     }
 }

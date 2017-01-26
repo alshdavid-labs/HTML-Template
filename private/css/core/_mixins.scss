@@ -17,5 +17,7 @@
 
     @if $background != ""{
         background-image: url( $background );
+    } @else {
+        background-image: url( $placeholder-image );
     }
-}
+} 

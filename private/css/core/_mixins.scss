@@ -22,6 +22,28 @@
     }
 } 
 
+@mixin box(){
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+@mixin box-header(){
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+@mixin drag-hand(){
+    cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur), default !important;
+
+    &:active {
+        cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/closedhand.cur), default !important;
+    } 
+}
+
+@mixin no-scroll(){
+    &::-webkit-scrollbar { width: 0 !important; @include drag-hand(); }
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
 @mixin placeholder($color: #666666){
     &::-webkit-input-placeholder { color: $color; }
     &::-moz-placeholder { color: $color; }

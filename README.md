@@ -22,6 +22,11 @@ In the root directory run the following command:
 npm run start
 ```
 
+You must build before distributing the site.
+To do so run:
+```
+npm run build
+```
 
 ----------------------------
 ##Webpack Installation:

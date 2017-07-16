@@ -1,6 +1,7 @@
 # HTML-Template
 
-This is a basic template that leverages a task runner to automatically handle a build process, involving CSS and HTML precompilers.
+Got a bit sick of the complex HTML templates out there, so this one is focused on simplicity.
+This leverages some simple (and essential) tasks, including CSS and HTML precompilers.
 
 ![Imgur](http://i.imgur.com/NWDGVOO.png)
 

@@ -22,7 +22,8 @@ In the root directory run the following command:
 npm start
 ```
 
-This will watch changes to the `/src/` folder and push them into a `/dist/` folder
+This will watch changes to the `/src/` folder and push them into a `/dist/` folder.
+
 The `/dist/` folder is safe to distribute/publish.
 
 To build use:

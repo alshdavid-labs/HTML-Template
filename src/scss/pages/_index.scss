@@ -1,0 +1,21 @@
+._page-index {
+    #hero-carousel {
+        $slide-height-desktop: 550px;
+        $slide-height-mobile: 300px;
+
+        height: $slide-height-mobile;
+
+        @media(min-width: $tablet){
+            height: $slide-height-desktop;
+        }
+
+        .slide {
+            height: $slide-height-mobile;
+            @include bg(cover);
+
+            @media(min-width: $tablet){
+                height: $slide-height-desktop;
+            }
+        }
+    }
+}

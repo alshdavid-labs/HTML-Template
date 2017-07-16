@@ -1,0 +1,75 @@
+// Remove blue highlight on click
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-1;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #333;
+} 
+
+
+.content-max-width {
+    max-width: 940px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+
+    @media(max-width: $desktop){
+        padding: 0 3%; 
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.slide {
+    @include drag-hand();
+
+    &:hover, &:active, &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+._page {
+    position: relative;
+} 
+
+.left {
+    @media(min-width: $desktop) {
+        float: left;
+    }
+}
+
+.right {
+    @media(min-width: $desktop) {
+        float: right;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+// To show and hide elements for desktop / mobile
+.desktop { @media (max-width: $desktop){ display: none !important; } }
+.mobile  { @media (min-width: $desktop){ display: none !important; } }
+
+
+.tablet-and-down  { @media screen and (min-width: $tablet) { display: none !important; } }
+.mobile-and-down  { @media screen and (min-width: $mobile) { display: none !important; } }
+
+.desktop-and-up   { @media screen and (max-width: $desktop){ display: none !important; } }
+.tablet-and-up    { @media screen and (max-width: $tablet) { display: none !important; } }
+
+
+

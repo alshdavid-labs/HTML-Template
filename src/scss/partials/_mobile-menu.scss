@@ -1,0 +1,36 @@
+.admin-bar .mobile-menu {
+    top : 46px;
+}
+
+body.open-menu .mobile-menu {
+    transform: translateX(0px);
+}
+
+.mobile-menu {
+    display: block !important;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    max-width: 90%;
+    width: 300px;
+    @include box();
+    transition: transform .25s;
+    transform: translateX(100%) translateX(20px);
+
+    li a, .close {
+        display: block;
+        line-height: 60px;
+        padding: 0 10px;
+        margin: 0 10px;
+        border-bottom: 1px solid $color-grey-50;
+    }
+
+    .ion-close {
+        //border-bottom: none;
+        float: right;
+        font-size: 20px;
+    }
+}

@@ -1,3 +1,18 @@
-#Ignore node modules
 node_modules
+
+dist
+dist/
+dist/*
+
 .tscache
+
+package-lock.json
+yarn.lock
+
+.vscode
+.vscode/
+.vscode/*
+
+.idea
+.idea/
+.idea/*

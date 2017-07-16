@@ -35,7 +35,7 @@ npm run build
 The task running includes:
 
 > SCSS  
-> CSS Auto-prefixing 
+> CSS Auto-prefixing  
 > Buildtime HTML include
 
 The HTML includer uses the following syntax:

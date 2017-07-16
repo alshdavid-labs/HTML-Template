@@ -2,7 +2,7 @@
 
 This is a basic template that leverages a task runner to automatically handle a build process, involving CSS and HTML precompilers.
 
-![Imgur](http://i.imgur.com/XMuRJGb.png)
+![Imgur](http://i.imgur.com/NWDGVOO.png)
 
 ## Installation Instructions
 

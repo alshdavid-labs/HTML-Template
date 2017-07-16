@@ -22,12 +22,12 @@
     }
 } 
 
-@mixin box(){
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
-}
-
-@mixin box-header(){
-    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+@mixin box($type: null){
+    @if $type == "heavy" {
+        box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    } @else {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    }
 }
 
 @mixin drag-hand(){
@@ -49,4 +49,57 @@
     &::-moz-placeholder { color: $color; }
     &:-ms-input-placeholder { color: $color; }
     &::placeholder { color: $color; }
+}
+
+/*
+    allows you to use @include pos(0px, 10px) with padding syntax
+    padding: 0, padding: 0 0, padding: 0 0 0, padding: 0 0 0 0
+*/
+
+@mixin pos($top, $right:null, $bottom:null, $left:null){
+    $i : 0;
+    
+    @if ($top != null) {
+      $i : $i + 1;
+    }
+    
+    @if ($right != null) {
+      $i : $i + 1;
+    }
+    
+    @if ($bottom != null) {
+      $i : $i + 1;
+    }
+    
+    @if ($left != null) {
+      $i : $i + 1;
+    }
+    
+    @if ($i == 1) {
+      top: $top;
+      right: $top;
+      bottom: $top;
+      left: $top;
+    } 
+    
+    @if ($i == 2) {
+      top: $top;
+      right: $right;
+      bottom: $top;
+      left: $right;
+    }
+    
+    @if ($i == 3) {
+      top: $top;
+      right: $right;
+      bottom: $bottom;
+      left: $right;
+    }
+    
+    @if ($i == 4) {
+      top: $top;
+      right: $right;
+      bottom: $bottom;
+      left: $left;
+    }
 }
